@@ -83,18 +83,22 @@ while True:
     print(below7000Rate)
     print(upper7000Rate)
 
+    print(upper7000)
+    print(below7000)
+
     if below3000Rate + below5000Rate > 0.85 :
         print("NO")
+    elif upper7000<100000000 and below7000<100000000 :
+        print("MUTE")
     elif upper7000Rate + below7000Rate + below5000Rate > 0.50 :
         print("YES")
-    else :
-        print("MUTE")
+
 
 
     print('-----------')
 
-    plt.plot(abs_vc)
-    plt.show()
+    # plt.plot(abs_vc)
+    # plt.show()
 
 
 audio.close()
